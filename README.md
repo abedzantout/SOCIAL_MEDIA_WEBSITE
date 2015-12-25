@@ -7,7 +7,7 @@ and pushing the boundaries of what we have learned so far in PHP, mySQL, Jquery,
 
 To create the approriate database for the website, please enter the following commands (using mySQL manager in phpmyAdmin or any method you prefer):
 
-```mysql
+```sql
 create Table members (
               user VARCHAR(16),
               pass VARCHAR(60),
