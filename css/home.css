@@ -1,0 +1,393 @@
+@import url("http://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css");
+
+/* ============================================= */
+/* =============== Primary style =============== */
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font: 12px/1 'Montserrat', sans-serif;
+	min-width: 1300px;
+	color: #333;
+	background: #333;
+	overflow-x: hidden;
+}
+
+body, html {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ============================================= */
+/* ============== Main components ============== */
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+}
+
+.sidebar {
+	position: absolute;
+	width: 220px;
+}
+
+.content {
+	flex: 1;
+	padding: 30px;
+	background: #d0d0d0; /*#eee*/
+	box-shadow: 0 0 5px black;
+	transform: translate3d(0, 0, 0);
+	transition: transform .3s;
+}
+
+.content.isOpen {
+	transform: translate3d(220px, 0, 0);
+}
+
+.sidebar-button {
+	cursor: pointer;
+}
+
+.sidebar-button:before {
+	content: '\f0c9';
+	font: 28px fontawesome;
+}
+
+/* ============================================= */
+/* ============== Menu navigation ============== */
+
+.title {
+	font-size: 16px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	color: #eee;
+	border-bottom: 1px solid #222;
+	background: #2a2a2a;
+}
+
+.nav li a {
+	position: relative;
+	display: block;
+	padding: 15px 15px 15px 50px;
+	font-size: 12px;
+	color: #eee;
+	border-bottom: 1px solid #222;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.nav li a:before {
+	font: 14px fontawesome;
+	position: absolute;
+	top: 14px;
+	left: 20px;
+}
+
+.nav li:nth-child(1) a:before {
+	content: '\f0c2';
+}
+
+.nav li:nth-child(2) a:before {
+	content: '\f183';
+	left: 23px;
+}
+
+.nav li:nth-child(3) a:before {
+	content: '\f003';
+}
+
+.nav li:nth-child(4) a:before {
+	content: '\f013';
+}
+
+.nav li:nth-child(5) a:before {
+	content: '\f023';
+	left: 22px;
+}
+
+.nav li a:hover {
+	background: #444;
+}
+
+.nav li a.active {
+	box-shadow: inset 5px 0 0 #2f889a, inset 6px 0 0 #222;
+	background: #444;
+}
+
+h3 {
+	margin: 25px;
+	font-size: 28px;
+	font-weight: 400;
+	text-align: center;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 400;
+	color: #999;
+}
+
+.main {
+	width: 60%;
+	margin: auto;
+	padding: 4%;
+	background-color: #FFF;
+	border-radius: 1em;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+
+.main ul {
+	width: 400px;
+	margin: 5% auto;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #EEE;
+	padding: 40px;
+	border-radius: 0.25em;
+}
+
+.main li {
+	padding: 20px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	margin: 3px;
+	background-color:#FFF;
+	cursor: pointer;
+}
+
+.main li:hover {
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+	background-color:rgba(255,255,255,0.7); 
+}
+
+.main li a {
+	text-transform: capitalize;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.username {
+	background-color: #37BD55;
+	border-radius: 0.25em;
+}
+
+.username:hover {
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+	background-color: #57CE71;
+}
+
+.follow {
+	padding: 10px;
+	float: right;
+	background-color: #2f889a;
+	border-radius: 0.25em;
+	transform: translateY(-26%);
+}
+
+.follow:hover, .button:hover {
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+	background-color: #3599ae;
+}
+
+.following {
+	color: white;
+	font-size: 12px;
+	padding: 10px 15px;
+}
+
+.button {
+	padding: 10px;
+	border-radius: 0.25em;
+	width: 200px;
+	background-color: #2f889a;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.button a {
+	text-decoration: none;
+	color: white;
+}
+
+.userImage {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	background-color: #EEE;
+	padding: 40px;
+}
+
+.container p {
+	text-align: center;
+	padding: 10px;
+}
+
+.container span {
+	float: left;
+	margin: 0 10px;
+}
+
+
+.container textarea {
+	width: 100%;
+	height: 100px;
+	resize: none;
+	border: none;
+	
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+
+
+.container input[type=submit] {
+	float: right;
+	cursor: pointer;
+	background: #37BD55;
+	color: #FFF;
+	font-weight: bold;
+	border: none;
+	padding: 10px;
+	border-radius: 0.25em;
+	margin-top: 5px;
+}
+
+.container input[type=submit]:hover {
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+	background-color: #57CE71;
+}
+
+.messages-container .messages a {
+	margin-left: 10px;
+	font-size: 10px;
+	padding: 5px;
+	border-radius: 0.25em;
+	background: #37BD55;
+}
+
+.messages-container .messages a:hover {
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+	background-color: #57CE71;
+}
+
+.messages-container ul {
+	width: 90%;
+	margin: 10% auto;
+	padding: 0;
+}
+
+/* HTML5 Boilerplate accessible hidden styles */
+[type="radio"] {
+	border: 0; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: absolute; 
+	width: 1px;
+}
+
+/* One radio button per line */
+label {
+	display: block;
+	cursor: pointer;
+	line-height: 2.5;
+	font-size: 1.3em;
+}
+
+[type="radio"] + span {
+	display: block;
+}
+
+/* the basic, unchecked style */
+[type="radio"] + span:before {
+	content: '';
+	display: inline-block;
+	width: 0.9em;
+	height: 0.9em;
+	vertical-align: -0.25em;
+	border-radius: 1em;
+	border: 0.125em solid #EEE;
+	box-shadow: 0 0 0 0.15em #000;
+	margin-right: 0.75em;
+	transition: 0.5s ease all;
+}
+
+/* the checked style using the :checked pseudo class */
+[type="radio"]:checked + span:before {
+	background: #2f889a;
+}
+
+/* never forget focus styling */
+[type="radio"]:focus + span:after {
+	font-size: 1.5em;
+	line-height: 1;
+	vertical-align: -0.125em;
+}
+
+.messages p  {
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 10px;
+}
+
+.messages .time {
+	color: white;
+	font-size: 12px;
+	background-color: #2f889a;
+	padding: 7px;
+}
+
+.messages .whisper {
+	background-color: #EEE;
+}
+
+
+.mainText p {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 20px;
+    
+    
+}
+
+.main img {
+    width: 100%;
+    margin: 0 auto;
+    
+}
