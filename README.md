@@ -6,6 +6,8 @@ and pushing the boundaries of what we have learned so far in PHP, mySQL, Jquery,
 
 This project was done in collaboration with Jad Haidar, a well respected fellow developer who focused mainly on the css part of this project .
 
+This project is far from its final version, and requires more work. But I'll leave it here for others to benefit from it.
+
 To create the approriate database for the website, please enter the following commands (using mySQL manager in phpmyAdmin or any method you prefer):
 
 ##Database
