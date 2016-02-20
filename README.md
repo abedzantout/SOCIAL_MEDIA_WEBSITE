@@ -8,6 +8,7 @@ This project was done in collaboration with Jad Haidar, a well respected fellow 
 
 To create the approriate database for the website, please enter the following commands (using mySQL manager in phpmyAdmin or any method you prefer):
 
+##Database
 ```sql
 create Table members (
               user VARCHAR(16),
@@ -35,7 +36,7 @@ create Table members (
               text VARCHAR(4096),
               INDEX(user(6)) );
 ```
-License
+##License
 
 The MIT License (MIT)
 Copyright (c) 2015 Abed Zantout
