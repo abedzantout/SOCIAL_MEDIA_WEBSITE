@@ -4,6 +4,7 @@ Robin's Nixon book "Learning PHP, MySQL &amp; JavaScript With jQuery, CSS & HTML
 This project was conducted for the sole purpose of expanding knowledge in the web development field,
 and pushing the boundaries of what we have learned so far in PHP, mySQL, Jquery, Javascript, html and CSS.
 
+This project was done in collaboration with Jad Haidar, a well respected fellow developer who focused mainly on the css part of this project .
 
 To create the approriate database for the website, please enter the following commands (using mySQL manager in phpmyAdmin or any method you prefer):
 
@@ -34,3 +35,13 @@ create Table members (
               text VARCHAR(4096),
               INDEX(user(6)) );
 ```
+License
+
+The MIT License (MIT)
+Copyright (c) 2015 Abed Zantout
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
